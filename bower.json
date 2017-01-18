@@ -1,0 +1,17 @@
+{
+  "name": "mushroom-exercises1",
+  "homepage": "https://github.com/mwatson615/mushroom-exercises1",
+  "authors": [
+    "Michael Watson <m.watson.tn@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
