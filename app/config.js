@@ -5,4 +5,7 @@ app.config(function($routeProvider, $locationProvider) {
 		controller: 'MainCtrl',
 		templateUrl: 'partials/main.html'
 	})
+	.otherwise({
+		redirectTo: '/'
+	})
 })

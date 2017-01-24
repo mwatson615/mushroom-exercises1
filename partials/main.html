@@ -1,1 +1,15 @@
 <h2>Show Mushrooms Partial</h2>
+
+<input type="text" ng-model="textbox" class="search" placeholder="search mushrooms...">
+<input type="button" ng-click="textbox" value="Search">
+	<div>
+		<span>
+			<input class="poison" ng-if="{{value.edible}} = false" type="radio" ng-model="notEdible" name="Poisonous">Poisonous
+			<input class="nonpoison" ng-if="{{value.edible}} = true" type="radio" name="Non-Poisonous">Non-Poisonous
+		</span>
+	</div>
+		<ul ng-repeat="mushroom in mushrooms | filter: textbox">
+			<li ng-repeat="(key, value) in mushroom">{{key}}<br>{{value.description}}</li>
+		</ul>
+
+	</div>

@@ -1,7 +1,11 @@
-app.controller('MainCtrl', function($scope, $http, mushroomFactory) {
+app.controller('MainCtrl', function($scope, mushroomFactory) {
 
+	// $scope.functionThing = (arg) => {
+	// }
 	mushroomFactory.getList()
 	.then((val) => {
-		console.log(val)
+		$scope.mushrooms = val;
+		// $scope.words = '';
+		console.log($scope.mushrooms)
 	})
 })
